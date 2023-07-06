@@ -15,6 +15,7 @@ export default function App() {
                 renderSeparator={<span>-</span>}
                 renderInput={props => <input {...props} />}
             />
+            <input type="text" autoComplete="one-time-code" />
         </div>
     );
 }
