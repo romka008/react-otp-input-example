@@ -11,7 +11,16 @@ export default function App() {
             <OtpInput
                 value={otp}
                 onChange={setOtp}
-                numInputs={4}
+                inputType="number"
+                numInputs={5}
+                renderSeparator={<span>-</span>}
+                renderInput={props => <input {...props} />}
+            />
+            <OtpInput
+                value={otp}
+                onChange={setOtp}
+                inputType="tel"
+                numInputs={5}
                 renderSeparator={<span>-</span>}
                 renderInput={props => <input {...props} />}
             />
