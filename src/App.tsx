@@ -8,7 +8,7 @@ export default function App() {
 
     return (
         <div className="wrapper">
-            <OtpInput
+            {/* <OtpInput
                 value={otp}
                 onChange={setOtp}
                 inputType="number"
@@ -23,7 +23,7 @@ export default function App() {
                 numInputs={5}
                 renderSeparator={<span>-</span>}
                 renderInput={props => <input {...props} />}
-            />
+            /> */}
             <input type="text" autoComplete="one-time-code" />
         </div>
     );
