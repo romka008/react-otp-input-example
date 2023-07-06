@@ -8,7 +8,7 @@ export default function App() {
 
     return (
         <div className="wrapper">
-            {/* <OtpInput
+            {/* {/* <OtpInput
                 value={otp}
                 onChange={setOtp}
                 inputType="number"
