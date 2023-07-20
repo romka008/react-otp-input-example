@@ -16,6 +16,7 @@ export const AutoCompleteInput = () => {
             // и установку значения в поле ввода
             // Например:
             const codeRegex = /Код:\s(\d+)/;
+            alert(smsMessage);
             if (typeof smsMessage === "string") {
                 setInputValue(smsMessage);
             }
