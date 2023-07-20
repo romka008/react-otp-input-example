@@ -19,13 +19,13 @@ export const AutoCompleteInput = () => {
             if (typeof smsMessage === "string") {
                 setInputValue(smsMessage);
             }
-            const match = typeof smsMessage === "string" ? smsMessage.match(codeRegex) : "";
-            console.log(match);
-            if (match) {
-                const code = match[1];
-                console.log(code);
-                setInputValue(code);
-            }
+            // const match = typeof smsMessage === "string" ? smsMessage.match(codeRegex) : "";
+            // console.log(match);
+            // if (match) {
+            //     const code = match[1];
+            //     console.log(code);
+            //     setInputValue(code);
+            // }
         };
 
         // Добавляем слушателя события message для получения sms-сообщений
