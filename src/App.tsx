@@ -9,24 +9,40 @@ export default function App() {
 
     return (
         <div className="wrapper">
-            <OtpInput
-                value={otp}
-                onChange={setOtp}
-                inputType="number"
-                numInputs={5}
-                renderSeparator={<span>-</span>}
-                renderInput={props => <input {...props} />}
-            />
-            <OtpInput
-                value={otp}
-                onChange={setOtp}
-                inputType="tel"
-                numInputs={5}
-                renderSeparator={<span>-</span>}
-                renderInput={props => <input {...props} />}
-            />
-            <input type="tel" autoComplete="one-time-code" />
-            <AutoCompleteInput />
+            <div style={{display: "flex", gap: "10px"}}>
+                <label>OtpInput, type: number</label>
+                <OtpInput
+                    value={otp}
+                    onChange={setOtp}
+                    inputType="number"
+                    numInputs={5}
+                    renderSeparator={<span>-</span>}
+                    renderInput={props => <input {...props} />}
+                />
+            </div>
+            <div style={{display: "flex", gap: "10px"}}>
+                <label>OtpInput, type: tel</label>
+                <OtpInput
+                    value={otp}
+                    onChange={setOtp}
+                    inputType="tel"
+                    numInputs={5}
+                    renderSeparator={<span>-</span>}
+                    renderInput={props => <input {...props} />}
+                />
+            </div>
+            <div style={{display: "flex", gap: "10px"}}>
+                <label>Input: "one-time-code"</label>
+                <input type="tel" autoComplete="one-time-code" />
+            </div>
+            <div style={{display: "flex", gap: "10px"}}>
+                <label>Input listener: "message"</label>
+                <AutoCompleteInput />
+            </div>
+            <div style={{display: "flex", gap: "10px"}}>
+                <label>Input без атрибутов, type: tel</label>
+                <input type="tel" />
+            </div>
         </div>
     );
 }
