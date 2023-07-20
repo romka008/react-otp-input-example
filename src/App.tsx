@@ -2,6 +2,7 @@ import {useState} from "react";
 import OtpInput from "react-otp-input";
 
 import "./App.css";
+import {AutoCompleteInput} from "./AutoCompleteInput/AutoCompleteInput";
 
 export default function App() {
     const [otp, setOtp] = useState("");
@@ -23,8 +24,9 @@ export default function App() {
                 numInputs={5}
                 renderSeparator={<span>-</span>}
                 renderInput={props => <input {...props} />}
-            /> 
+            />
             <input type="tel" autoComplete="one-time-code" />
+            <AutoCompleteInput />
         </div>
     );
 }
