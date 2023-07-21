@@ -3,6 +3,7 @@ import OtpInput from "react-otp-input";
 
 import "./App.css";
 import {AutoCompleteInput} from "./AutoCompleteInput/AutoCompleteInput";
+import {InputWebOTP} from "./InputWebOTP/InputWebOTP";
 
 export default function App() {
     const [otp, setOtp] = useState("");
@@ -32,7 +33,7 @@ export default function App() {
                 />
             </div>
             <div style={{display: "flex", gap: "10px"}}>
-                <label>Input: "one-time-code"</label>
+                <label>Input: только autoComplete: "one-time-code"</label>
                 <input type="tel" autoComplete="one-time-code" />
             </div>
             <div style={{display: "flex", gap: "10px"}}>
@@ -42,6 +43,10 @@ export default function App() {
             <div style={{display: "flex", gap: "10px"}}>
                 <label>Input без атрибутов, type: tel</label>
                 <input type="tel" />
+            </div>
+            <div style={{display: "flex", gap: "10px"}}>
+                <label>Input c WebOTP API</label>
+                <InputWebOTP />
             </div>
         </div>
     );
