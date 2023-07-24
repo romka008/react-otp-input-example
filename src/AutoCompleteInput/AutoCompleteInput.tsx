@@ -30,18 +30,18 @@ export const AutoCompleteInput = () => {
         };
 
         // Добавляем слушателя события message для получения sms-сообщений
-        window.addEventListener("message", handleSmsReceived);
+        document.addEventListener("message", handleSmsReceived);
 
         // Возвращаем функцию очистки, чтобы удалить слушатель при размонтировании компонента
         return () => {
-            window.removeEventListener("message", handleSmsReceived);
+            document.removeEventListener("message", handleSmsReceived);
         };
     }, []);
 
     const simulateSmsReceived = () => {
         // Симулируем получение смс-сообщения
         const smsMessage = "Ваш код: 123456"; // Здесь должно быть фактическое смс-сообщение
-        window.postMessage(smsMessage); // Отправляем смс-сообщение в окно браузера
+        document.postMessage(smsMessage); // Отправляем смс-сообщение в окно браузера
     };
 
     return (
