@@ -26,7 +26,7 @@ export const InputWebOTP = () => {
                     //set the state and submit the form automatically
                     setInputValue(otp.code);
                     alert(otp.code);
-                    form?.submit();
+                    // form?.submit();
                 })
                 .catch(err => {
                     console.log(err);

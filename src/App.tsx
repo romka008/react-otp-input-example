@@ -44,10 +44,10 @@ export default function App() {
                 <label>Input без атрибутов, type: tel</label>
                 <input type="tel" />
             </div>
-            {/* <div style={{display: "flex", gap: "10px"}}>
+            <div style={{display: "flex", gap: "10px"}}>
                 <label>Input c WebOTP API</label>
                 <InputWebOTP />
-            </div> */}
+            </div>
         </div>
     );
 }
