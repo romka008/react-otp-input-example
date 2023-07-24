@@ -41,6 +41,7 @@ export const AutoCompleteInput = () => {
     const simulateSmsReceived = () => {
         // Симулируем получение смс-сообщения
         const smsMessage = "Ваш код: 123456"; // Здесь должно быть фактическое смс-сообщение
+        // @ts-ignore
         document.postMessage(smsMessage); // Отправляем смс-сообщение в окно браузера
     };
 
